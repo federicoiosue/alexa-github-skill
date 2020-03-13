@@ -1,0 +1,90 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "progetti opensource",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "RetrieveUserRepoIntent",
+          "slots": [
+            {
+              "name": "username",
+              "type": "AMAZON.FirstName",
+              "samples": [
+                "{username}"
+              ]
+            }
+          ],
+          "samples": [
+            "{username}",
+            "repository di {username}",
+            "repo di {username}",
+            "trova i progetti di {username}",
+            "progetti {username}",
+            "migliori progetti di {username}",
+            "lista {username}"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "RetrieveUserRepoIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "username",
+              "type": "AMAZON.FirstName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.629209501043.1235819831405"
+              }
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Confirm.Intent.629209501043",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "asdasd"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.629209501043.1235819831405",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qual\u0027è l\u0027utente di cui vuoi conoscere i cinque progetti più seguiti?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "16"
+}

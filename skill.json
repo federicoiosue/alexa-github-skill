@@ -1,0 +1,68 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "it-IT": {
+          "summary": "Indica quali sono i cinque progetti più seguiti di un dato utente Github",
+          "examplePhrases": [
+            "Alexa, chiedi a Github quali sono i cinque migliori progetti di federicoiosue"
+          ],
+          "keywords": [
+            "github",
+            "utente",
+            "open",
+            "source",
+            "progetti",
+            "free",
+            "git",
+            "programmazione",
+            "informatica",
+            "java",
+            "javascript",
+            "python",
+            "nodejs"
+          ],
+          "name": "Progetti Github",
+          "smallIconUri": "file://assets/images/it-IT_smallIconUri.png",
+          "description": "Chiedi i migliori progetti Github di un utente a tua scelta per conoscerne il nome, le stelle ed i forks!",
+          "largeIconUri": "file://assets/images/it-IT_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "sourceLocaleForLanguages": [
+          {
+            "sourceLocale": "it-IT",
+            "language": "it"
+          }
+        ],
+        "isActive": true
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "1. open skill\n2. ask \"lista {username}\" to get top 5 repos of a Github user through its public APIs",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": [
+        "IT"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:735149881344:function:2593f1a8-1779-43aa-b5a2-a589766fa635:Release_0"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "it-IT": {}
+      },
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
