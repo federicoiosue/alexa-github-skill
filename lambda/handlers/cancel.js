@@ -16,6 +16,7 @@ module.exports = {
 
         return handlerInput.responseBuilder
             .speak(texts.EXIT)
+            .withShouldEndSession(true)
             .getResponse();
     }
 };

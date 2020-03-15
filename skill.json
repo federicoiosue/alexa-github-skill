@@ -5,7 +5,8 @@
         "it-IT": {
           "summary": "Indica quali sono i cinque progetti più seguiti di un dato utente Github",
           "examplePhrases": [
-            "Alexa, chiedi a Github quali sono i cinque migliori progetti di federicoiosue"
+            "Alexa, chiedi a progetti opensource i migliori progetti di federicoiosue",
+            "apri progetti opensource e cerca i migliori progetti di federicoiosue"
           ],
           "keywords": [
             "github",
@@ -38,7 +39,7 @@
         "isActive": true
       },
       "isAvailableWorldwide": false,
-      "testingInstructions": "1. open skill\n2. ask \"lista {username}\" to get top 5 repos of a Github user through its public APIs",
+      "testingInstructions": "1. Alexa, chiedi a progetti opensource i migliori progetti di federicoiosue\n2. Alexa, apri progetti opensource e cerca i migliori progetti di federicoiosue\n3. Alexa, apri progetti opensource\n  3a. progetti di federicoiosue",
       "category": "KNOWLEDGE_AND_TRIVIA",
       "distributionMode": "PUBLIC",
       "distributionCountries": [

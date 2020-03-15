@@ -24,24 +24,125 @@
           "slots": [
             {
               "name": "username",
-              "type": "AMAZON.FirstName",
-              "samples": [
-                "{username}"
-              ]
+              "type": "USERNAMES"
+            },
+            {
+              "name": "action",
+              "type": "ACTIONS"
             }
           ],
           "samples": [
-            "{username}",
-            "repository di {username}",
-            "repo di {username}",
-            "trova i progetti di {username}",
-            "progetti {username}",
-            "migliori progetti di {username}",
-            "lista {username}"
+            "{action} {username}"
           ]
         }
       ],
-      "types": []
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "123a-sd-asd-asd123qweqw123"
+              }
+            },
+            {
+              "name": {
+                "value": "wqefwef-wefwef"
+              }
+            },
+            {
+              "name": {
+                "value": "vieunverkfn"
+              }
+            },
+            {
+              "name": {
+                "value": "fejnòewrjkg"
+              }
+            },
+            {
+              "name": {
+                "value": "qwenqkwjenqkljwe"
+              }
+            },
+            {
+              "name": {
+                "value": "matteogaito"
+              }
+            },
+            {
+              "name": {
+                "value": "federicoiosue"
+              }
+            }
+          ],
+          "name": "USERNAMES"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "repo di"
+              }
+            },
+            {
+              "name": {
+                "value": "progetti di"
+              }
+            },
+            {
+              "name": {
+                "value": "username"
+              }
+            },
+            {
+              "name": {
+                "value": "trova"
+              }
+            },
+            {
+              "name": {
+                "value": "elenca"
+              }
+            },
+            {
+              "name": {
+                "value": "migliori repo"
+              }
+            },
+            {
+              "name": {
+                "value": "migliori progetti"
+              }
+            },
+            {
+              "name": {
+                "value": "progetti"
+              }
+            },
+            {
+              "name": {
+                "value": "repository"
+              }
+            },
+            {
+              "name": {
+                "value": "repo"
+              }
+            },
+            {
+              "name": {
+                "value": "lista"
+              }
+            },
+            {
+              "name": {
+                "value": "cerca"
+              }
+            }
+          ],
+          "name": "ACTIONS"
+        }
+      ]
     },
     "dialog": {
       "intents": [
@@ -52,15 +153,21 @@
           "slots": [
             {
               "name": "username",
-              "type": "AMAZON.FirstName",
+              "type": "USERNAMES",
               "elicitationRequired": true,
               "confirmationRequired": false,
               "prompts": {
-                "elicitation": "Elicit.Slot.629209501043.1235819831405"
+                "elicitation": "Elicit.Slot.638528015482.1334347173348"
               }
+            },
+            {
+              "name": "action",
+              "type": "ACTIONS",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
             }
-          ],
-          "delegationStrategy": "ALWAYS"
+          ]
         }
       ],
       "delegationStrategy": "ALWAYS"
@@ -76,15 +183,15 @@
         ]
       },
       {
-        "id": "Elicit.Slot.629209501043.1235819831405",
+        "id": "Elicit.Slot.638528015482.1334347173348",
         "variations": [
           {
             "type": "PlainText",
-            "value": "Qual\u0027è l\u0027utente di cui vuoi conoscere i cinque progetti più seguiti?"
+            "value": "Per quale utente vuoi cercare i progetti più seguiti?"
           }
         ]
       }
     ]
   },
-  "version": "16"
+  "version": "38"
 }

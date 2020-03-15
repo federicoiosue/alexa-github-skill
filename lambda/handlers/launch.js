@@ -12,7 +12,7 @@ module.exports = {
   handle (handlerInput) {
     return handlerInput.responseBuilder
       .speak(texts.WELCOME)
-      .reprompt(texts.REPROMPT)
+      .reprompt(texts.HELP)
       .getResponse()
   }
 }
